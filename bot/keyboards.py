@@ -5,14 +5,14 @@ def main_menu_keyboard() -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(inline_keyboard=[
         [
             InlineKeyboardButton(text="📥 Downloader", callback_data="menu:download"),
-            InlineKeyboardButton(text="🛡 Group MODERATION", callback_data="menu:moderation"),
+            InlineKeyboardButton(text="🛡 Moderation", callback_data="menu:moderation"),
         ],
         [
             InlineKeyboardButton(text="🤖 AI Assistant", callback_data="menu:ai"),
-            InlineKeyboardButton(text="☁️ Personal Cloud Storage", callback_data="menu:cloud"),
+            InlineKeyboardButton(text="☁️ Cloud Storage", callback_data="menu:cloud"),
         ],
         [
-            InlineKeyboardButton(text="👨‍💻 Developer INFO", callback_data="menu:dev"),
+            InlineKeyboardButton(text="👨‍💻 Developer", callback_data="menu:dev"),
         ],
     ])
 
