@@ -1,0 +1,13 @@
+# app name is set by `fly launch` — replace after running it
+app = "telegram-bot"
+primary_region = "iad"
+
+[build]
+
+[processes]
+app = "python -m bot.main"
+
+[[vm]]
+cpu_kind = "shared"
+cpus = 1
+memory_mb = 512
